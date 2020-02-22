@@ -10,7 +10,13 @@
 // and `email` and makes those available as attributes. The `constructor()`
 // method should also break the username from before the `@` symbol in the
 // `email` value and use that to store on a `this.username` property.
-
+class Person {
+    constructor(name, email) {
+    this.name = 'Person';
+    this.name = name;
+    this.email = email;
+    }
+}
 // TODO: Create another class that extends the `Person` class called `Student`.
 // The `Student` class should add a line to the `constructor()` method that sets
 // the property `this.attendance` to an empty Array (`[ ]`). The `attendance`
@@ -18,7 +24,14 @@
 // use the `super()` command so you don't lose the functionality of the
 // `constructor()` method from the `Person` class.)
 //
-
+class Student extends Person {
+    constructor(attendance) {
+        super(attendance, attendance)
+        this.name = 'Student';
+        this.attendance = [];
+    }
+    
+}
 
 // TODO: Create another method on the `Student` class called `calculateAttendance`.
 // This method should give a percentage of how many days the student was present.
@@ -31,6 +44,7 @@
 // TODO: Create another class that extends the `Person` class called `Teacher`.
 // The `Teacher` class should add a property called `this.honorific` (supplied
 // when an instance of `Teacher` is created).
+
 
 
 // TODO: Set up our Course class so we can run the whole roster from it.
