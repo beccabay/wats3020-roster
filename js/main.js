@@ -26,11 +26,11 @@ class Person {
 //
 class Student extends Person {
     constructor(attendance) {
-        super(attendance, attendance)
+        super(attendance, attendance);
         this.name = 'Student';
         this.attendance = [];
     }
-    
+
 }
 
 // TODO: Create another method on the `Student` class called `calculateAttendance`.
@@ -44,7 +44,13 @@ class Student extends Person {
 // TODO: Create another class that extends the `Person` class called `Teacher`.
 // The `Teacher` class should add a property called `this.honorific` (supplied
 // when an instance of `Teacher` is created).
-
+class Teacher extends Person {
+    constructor(honorific) {
+        super(honorific, honorific);
+        this.name = 'Teacher';
+        this.honorific = Teacher;
+    }
+}
 
 
 // TODO: Set up our Course class so we can run the whole roster from it.
