@@ -18,7 +18,7 @@ class Student extends Person {
             for (let mark of this.attendance) {
                 counter += mark;
             }
-            let attendancePercentage = (counter / this.attendance.length) * 100 ;
+            let attendancePercentage = (counter / this.attendance.length) * 100;
             return `${attendancePercentage.toFixed(2)}%`;
         }else {
             return '0%';
@@ -47,7 +47,7 @@ class Course {
 
    
 addStudent() {
-    let name = prompt("Enter Student full name:", "Becca Bay");
+    let name = prompt("Enter student full name:", "Becca Bay");
     let email = prompt("Enter student email:", "rbay@seattleu.edu");
     let newStudent = new Student(name, email);
     this.students.push(newStudent);
@@ -93,7 +93,7 @@ markAttendance(username, status = "present") {
 
 let courseCode = prompt("Enter the course code:", "WATS 3020");
 
-let courseTitle = = prompt("Enter the course title:", "Intro to JavaScript");
+let courseTitle = prompt("Enter the course title:", "Intro to JavaScript");
 
 let courseDescription = prompt("Enter the course description:", "Learning to code JavaScript");
 
