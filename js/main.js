@@ -58,7 +58,7 @@ addStudent() {
 setTeacher() {
     let name = prompt("Enter full teacher name:", "Becca Bay");
     let email = prompt("Enter teacher email:", "rbay@seattleu.edu");
-    let honorofic = prompt("Enter honorific:", "Prof.");
+    let honorific = prompt("Enter honorific:", "Prof.");
     this.teacher = new Teacher(name, email, honorific);
     updateRoster(this);
 }
